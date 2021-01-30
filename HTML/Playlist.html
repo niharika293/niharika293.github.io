@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playlist Band</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/playlist.css">
+</head>
+<body>
+	<div class="playlist_header">
+		<nav>
+			<!-- 1.image logo -->
+			<img class="logo" src="../Images/Nav-icon.PNG" alt="img_logo_player">
+			<!-- 2.Favourites -->
+			<div id="favourites" class="text_color_whitish"><h1>Favourites </h1></div>
+			<!-- 3.Search Bar -->
+
+			<div id="search_bar_inside">
+				<form>
+					<i id="icon_search" class="fas fa-search"></i>
+					<input type="text" name="Search" id="Search" placeholder="Search">
+					<i id="icon_audio" class="fas fa-microphone"></i> 
+				</form>
+			</div>
+			<!-- 4.Notification Bell -->
+			<div class="notification">
+				<i class="fas fa-bell"></i>
+				<span class="num"></span>
+			</div>
+			<!-- 5. My Image -->
+			<div class="my_image">
+				<img src="../Images/resume_pic.jpeg">
+			</div>
+		</nav>		
+	</div> <!-- end of playlist_header -->
+	<main>
+		<div id="master_div">
+			<div class="info_left">
+				<section id="about_artist">
+					<img class="artist_image" src="../Images/sheeran.jpg">
+					<h2 class="artist_name">Ed Sheeran</h2>
+					<h3 id="span_followers">851 Followers</h3>
+					<p class="artist_info">
+						Singer <br> <br>
+						Ed Sheeran is an English singer, songwriter, musician, <br>
+						record producer, and actor. After first recording music in 2004, he began gaining attention through YouTube. 
+					</p>
+					<button class="btn_play_all" type="button">Play All</button>
+					<button class="btn_follow">Follow</button>
+					<p class="count">50 Tracks|6 Albums</p>
+					
+				</section> <!-- end of about_artist -->
+				<section id="artist_songs">
+					<div class="song">
+						<h4 class="heading_number">01</h4>
+						<img class="image_song_dimensions" src="../Images/21_guns.jpg">
+						
+						<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+						<i class="far fa-heart left-heart"></i>
+                    	<i class="fas fa-plus"></i>
+					</div>
+					<div class="song">
+						<h4 class="heading_number">02</h4>
+						<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+						<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+						<i class="far fa-heart left-heart"></i>		
+                    	<i class="fas fa-plus"></i>				
+					</div>
+					<div class="song">
+						<h4 class="heading_number">03</h4>
+						<img class="image_song_dimensions" src="../Images/malone.jpg">
+						<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>	
+						<i class="far fa-heart left-heart"></i>	
+                    	<i class="fas fa-plus"></i>				
+					</div>
+					<div class="song">
+						<h4 class="heading_number">04</h4>
+						<img class="image_song_dimensions" src="../Images/21_guns.jpg">
+							<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+						<i class="far fa-heart left-heart"></i>
+                    	<i class="fas fa-plus"></i>
+
+					</div>
+					<div class="song">
+						<h4 class="heading_number">05</h4>
+						<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+						<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+						<i class="far fa-heart left-heart"></i>	
+                    	<i class="fas fa-plus"></i>
+
+					</div>
+					<div class="song">
+						<h4 class="heading_number">06</h4>
+						<img class="image_song_dimensions" src="../Images/malone.jpg">
+							<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+						<i class="far fa-heart left-heart"></i>	
+                    	<i class="fas fa-plus"></i>
+										
+					</div>
+<!-- 					<div id="heart_icons">
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    </div> -->
+<!--                     <div id="plus_icons">
+                    	<i class="fas fa-plus"></i>
+                    	<i class="fas fa-plus"></i>
+                    	<i class="fas fa-plus"></i>
+                    	<i class="fas fa-plus"></i>
+                    	<i class="fas fa-plus"></i>
+                    	<i class="fas fa-plus"></i>
+                    </div>   -->
+					
+					
+				</section> <!-- end of artist_songs -->
+				
+			</div> <!-- end of info_left -->
+			<div id="info_right">
+				<section id="similar_artists">
+					<h3 class="heading_simila_artists">Similar Artists</h3>
+					<button class="similar_artists_button">View All</button>
+					<div class="similar_artists_song">
+						<img class="similar_artists_image" src="../Images/andhadhun.jpg">
+						<h4 class="similar_artists_singer">Andhahun</h4>
+						<i id="icon_ellipse" class="fas fa-ellipsis-h"></i>
+						<h4 class="duration">3:30</h4>
+					</div>
+					<div class="similar_artists_song">
+						<img class="similar_artists_image" src="../Images/andhadhun.jpg">
+						<h4 class="similar_artists_singer">Andhahun</h4>
+						<i id="icon_ellipse" class="fas fa-ellipsis-h"></i>
+						<h4 class="duration">3:30</h4>
+					</div>
+					<div class="similar_artists_song">
+						<img class="similar_artists_image" src="../Images/andhadhun.jpg">
+						<h4 class="similar_artists_singer">Andhahun</h4>
+						<i id="icon_ellipse" class="fas fa-ellipsis-h"></i>
+						<h4 class="duration">3:30</h4>
+					</div>
+					
+				</section> <!-- end of similar_artists -->
+				<section id="recently_played">
+					<h2 class="heading_recently_played">Recently Played</h2>
+					<button class="recently_played_button">View All</button>
+					<div class="recently_played_song">
+						<h4 class="heading_number">01</h4>
+						<img class="image_song_dimensions" src="../Images/21_guns.jpg">
+						<h3 class="song_name">21 Guns</h3>
+						<h4 class="singer_name">Greenday</h4>
+					</div>
+					<div class="recently_played_song">
+						<h4 class="heading_number">02</h4>
+						<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+						<h3 class="song_name">Paradise</h3>
+						<h4 class="singer_name">Coldplay</h4>						
+					</div>
+					<div class="recently_played_song">
+						<h4 class="heading_number">03</h4>
+						<img class="image_song_dimensions" src="../Images/malone.jpg">
+						<h3 class="song_name">Rockstar</h3>
+						<h4 class="singer_name">Post Malone</h4>						
+					</div>
+					<div class="recently_played_song">
+						<h4 class="heading_number">04</h4>
+						<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+						<h3 class="song_name">Paradise</h3>
+						<h4 class="singer_name">Coldplay</h4>						
+					</div>
+					<div class="recently_played_song">
+						<h4 class="heading_number">05</h4>
+						<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+						<h3 class="song_name">Paradise</h3>
+						<h4 class="singer_name">Coldplay</h4>						
+					</div>
+					<div class="recently_played_song">
+						<h4 class="heading_number">06</h4>
+						<img class="image_song_dimensions" src="../Images/malone.jpg">
+						<h3 class="song_name">Rockstar</h3>
+						<h4 class="singer_name">Post Malone</h4>						
+					</div>
+					 <div id="recently_played_heart_icons">
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                   </div>
+				</section> <!-- end of recently_played -->
+				
+			</div> <!-- end of info_right -->
+			<section id="music_player">
+				<div id="music_player_div">
+					<div id="about_song">
+						<img class="about_song_image" src="../Images/latest_deathbed.jpg">
+						<h4 class="about_song_name">Deathbed</h4>
+						<h4 class="about_artist_name">Powfu</h4>
+						<i id="icon_heart" class="far fa-heart"></i>
+						<i id="icon_ban"class="fas fa-ban"></i>
+					</div>
+					<div id="player_bar">
+						<i id="icon_shuffle" class="fas fa-random"></i>
+						<i id="icon_backward" class="fas fa-step-backward"></i>
+						<i id="icon_pause" class="far fa-pause-circle" ></i>
+						<i id="icon_forward" class="fas fa-step-forward"></i>
+						<i id="icon_repeat" class="fas fa-redo"></i>
+						<span id="span_before" class="span_time">1:39 </span>
+						<input class="slider" type="range" min="1" max="100" value="50">
+						<span id="span_after" class="span_time">4:45 </span>
+					</div>
+					<div id="other_controls">
+						<i class="fas fa-list"></i>
+						<i class="fas fa-desktop"></i>
+						<i class="fas fa-volume-up"></i>
+						<input class="volume_slider" type="range" min="1" max="100" value="30">
+						<i id="icon_expand" class="fas fa-expand"></i>
+					</div>
+				</div>
+			</section> <!-- end of Music Player Setion -->
+
+
+
+
+			
+		</div> <!-- end of master_div -->
+
+
+
+
+
+	</main>
+
+
+</body>
+</html>

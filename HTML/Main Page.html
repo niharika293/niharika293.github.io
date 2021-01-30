@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/music.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+	<div class ="music_header">
+		<nav>
+			<!-- 1.image logo -->
+			<img class="logo" src="../Images/Nav-icon.PNG" alt="img_logo_player">
+			<!-- 2.Favourites -->
+			<div id="favourites" class="text_color_whitish"><h1>Favourites </h1></div>
+			<!-- 3.Search Bar -->
+
+				<div id="search_bar_inside">
+					<form>
+						<i id="icon_search" class="fas fa-search"></i>
+						<input type="text" name="Search" id="Search" placeholder="Search">
+						<i id="icon_audio" class="fas fa-microphone"></i> 
+					</form>
+				</div>
+			<!-- 4.Notification Bell -->
+				<div class="notification">
+					<i class="fas fa-bell"></i>
+					<span class="num"></span>
+				</div>
+				<!-- 5. My Image -->
+				<div class="my_image">
+				<img src="../Images/resume_pic.jpeg">
+				</div>
+		</nav>
+
+	</div> <!-- end of music_header -->
+
+	<main>
+		<div id="master_div">
+			<section id="music_cards">
+				<img class="images_cards" src="../Images/malone.jpg" alt="Post Malone">
+				<img class="images_cards" src="../Images/new_releases.PNG" alt="Latest Releases!">
+				<img class="images_cards" src="../Images/greenday.jpg" alt="Greenday!">
+			</section> <!-- end of section music_cards -->
+			<section id="latest_release">
+				<h3 id="heading_latest_release"> Latest Release </h3>
+				<div id="track_1">
+					<img class="image_song_dimensions" src="../Images/all_in_my_head.jpg">
+					<h4 class="track_name">Friends</h4>
+					<!-- <i id="icon_ellipse" class="fas fa-ellipsis-h"></i> -->
+					<div class="ellipse_dropdown">
+							 <button class="ellipse_dropbtn"><i id="icon_ellipse" class="fas fa-ellipsis-h"></i></button>
+							  <div class="ellipse_content">
+							  <a href="#">Play Now</a>
+							  <a href="#">Add to Queue</a>
+							  <a href="#">Add to Favourites</a>
+							  <a href="#">Get Info</a>
+							  </div>
+					</div>
+					<h4 class="date">Mar 29,2009</h4>
+					<h4 class="duration">3:30</h4>
+				</div>
+				<div id="track_2" class="to_right">
+					<img class="image_song_dimensions" src="../Images/21_guns.jpg">
+					<h4 class="track_name">21 Guns</h4>
+					<!-- <i id="icon_ellipse" class="fas fa-ellipsis-h"></i> -->
+					<div class="ellipse_dropdown">
+							 <button class="ellipse_dropbtn"><i id="icon_ellipse" class="fas fa-ellipsis-h"></i></button>
+							  <div class="ellipse_content">
+							  <a href="#">Play Now</a>
+							  <a href="#">Add to Queue</a>
+							  <a href="#">Add to Favourites</a>
+							  <a href="#">Get Info</a>
+							  </div>
+					</div>
+					<h4 class="date">Oct 14,1995</h4>
+					<h4 class="duration">3:50</h4>
+				</div>
+				<div id="track_3" class="upper_margin">
+					<img class="image_song_dimensions" src="../Images/Coldplay_Paradise.jpg">
+					<h4 class="track_name">Paradise </h4>
+					<!-- <i id="icon_ellipse" class="fas fa-ellipsis-h"></i> -->
+					<div class="ellipse_dropdown">
+							 <button class="ellipse_dropbtn"><i id="icon_ellipse" class="fas fa-ellipsis-h"></i></button>
+							  <div class="ellipse_content">
+							  <a href="#">Play Now</a>
+							  <a href="#">Add to Queue</a>
+							  <a href="#">Add to Favourites</a>
+							  <a href="#">Get Info</a>
+							  </div>
+					</div>
+					<h4 class="date">Dec 8,2002</h4>
+					<h4 class="duration">8:30</h4>
+				</div>
+				<div id="track_4" class="to_right upper_margin">
+					<img class="image_song_dimensions" src="../Images/summer_of_69.jpg">
+					<h4 class="track_name">Ultimate</h4>
+					<!-- <i id="icon_ellipse" class="fas fa-ellipsis-h"></i> -->
+					<div class="ellipse_dropdown">
+							 <button class="ellipse_dropbtn"><i id="icon_ellipse" class="fas fa-ellipsis-h"></i></button>
+							  <div class="ellipse_content">
+							  <a href="#">Play Now</a>
+							  <a href="#">Add to Queue</a>
+							  <a href="#">Add to Favourites</a>
+							  <a href="#">Get Info</a>
+							  </div>
+					</div>
+					<h4 class="date">Jun 29,2002</h4>
+					<h4 class="duration">6:30</h4>
+				</div>
+				<div class="queue">
+					<h1>Queue</h1>
+						<div class="queue_dropdown">
+							 <button class="dropbtn">Queue Options </button>
+							  <div class="dropdown-content">
+								  <a href="../HTML/Playlist.html" target="_blank">Playlists</a>
+								  <a href="#">Favourite Settings</a>
+							  </div>
+						</div>
+					<div id="queue_track">
+                        <img src="../Images/Nick_Lachey_3.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">All in my head</h4>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/greenday.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">21 Guns</h4>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/Coldplay_Paradise.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Paradise</h4>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/malone.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Rockstar</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/sakhiya.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Sakhiya</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/andhadhun.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Andhadhun</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/ariana.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Ariana</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/morni.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Morni</h4>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/ariana.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Ariana</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/morni.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Morni</h4>
+                        <br>
+                    </div>
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/malone.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Rockstar</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/sakhiya.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Sakhiya</h4>
+                        <br>
+                    </div>  
+                    <br>
+                    <div id="queue_track" >
+                        <img src="../Images/andhadhun.jpg"
+                         id="queue_img">
+                        <h4 class="queue_track_name">Andhadhun</h4>
+                        <br>
+                    </div>
+                    <div id="heart_icons">
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    	<i class="far fa-heart"></i>
+                    </div>  
+
+				</div>  
+			</section> <!-- end of section latest_release -->
+			<section id="popular_artists">
+				<h3 id="heading_popular">Popular Artists</h3>
+				<div id="popular_artists_div">
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/ariana.jpg">
+						</a>
+						<h4 class="popular_artists_names">Ariana Grande</h4>
+					</div>
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/drake.jpg">
+						</a>
+						<h4 class="popular_artists_names">Drake</h4>
+					</div>
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/sheeran.jpg">
+						</a>
+						<h4 class="popular_artists_names">Ed Sheeran</h4>
+					</div>
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/post_malone.jpg">
+						</a>
+						<h4 class="popular_artists_names">Post Malone</h4>
+					</div>
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/rihanna.jpg">
+						</a>
+						<h4 class="popular_artists_names">Rihanna</h4>
+					</div>
+					<div class="popular_artists_cards">
+						<a href="../HTML/Playlist.html" target="_blank">
+							<img class="round" src="../Images/michael.jpg">
+						</a>
+						<h4 class="popular_artists_names">Michael Jackson</h4>
+					</div>
+				</div>
+			</section> <!-- end of section Popular Artists -->
+			<section id="stations">
+				<img id="station_image" src="../Images/station.png">
+				<img class="stations_round" src="../Images/love.jpg">
+				<h4 class="stations_names">Love</h4>
+				<img class="stations_round" src="../Images/retro.png">
+				<h4 class="stations_names">Retro</h4>
+				<img class="stations_round" src="../Images/chill.jpg">
+				<h4 class="stations_names">Chill</h4>
+				<img class="stations_round" src="../Images/workout.png">
+				<h4 class="stations_names">Workout</h4>
+				<img class="stations_round" src="../Images/rock.jpg">
+				<h4 class="stations_names" >Rock</h4>
+				<img class="stations_round" src="../Images/pop.jpg">
+				<h4 class="stations_names">Pop</h4>
+			</section> <!-- end of section stations -->
+			<section id="genre">
+				<div id="genre_div">
+					<div class="genre_inside">
+						<img class="genre_images" src="../Images/party.jpg">
+						<h4 class="genre_names">Party</h4>
+					</div>
+					<div class="genre_inside">
+						<img class="genre_images" src="../Images/electronic.jpg">
+						<h4 class="genre_names">Electronic</h4>
+					</div>
+					<div class="genre_inside">
+						<img class="genre_images" src="../Images/roadtrip.png">
+						<h4 class="genre_names">Road Trip</h4>
+					</div>
+				</div>	
+			</section> <!-- end of section genre -->
+			<section id="latest_english">
+				<h3 id="heading_latest_english"> Latest English</h3>
+				<div id="latest_english_div">
+					<div class="latest_english_inside">
+						<img class="latest_english_image" src="../Images/latest_deathbed.jpg">
+						<h4 class="latest_english_name">Powfu</h4>
+						<h4 class="latest_english_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_english_inside">
+						<img class="latest_english_image" src="../Images/latest_coldplay.jpg">
+						<h4 class="latest_english_name">Coldplay</h4>
+						<h4 class="latest_english_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_english_inside">
+						<img class="latest_english_image" src="../Images/latest_perfect.jpg">
+						<h4 class="latest_english_name">Ed Sheeran</h4>
+						<h4 class="latest_english_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_english_inside">
+						<img class="latest_english_image" src="../Images/latest_sunflower.jpg">
+						<h4 class="latest_english_name">Post Malone</h4>
+						<h4 class="latest_english_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_english_inside">
+						<img class="latest_english_image" src="../Images/latest_script.jpg">
+						<h4 class="latest_english_name">Script</h4>
+						<h4 class="latest_english_date">May 5, 2020</h4>
+					</div>					
+				</div>
+			</section> <!-- end of section latest english -->
+			<section id="latest_hindi">
+				<h3 id="heading_latest_hindi"> Latest Hindi</h3>
+				<div id="latest_hindi_div">
+					<div class="latest_hindi_inside">
+						<img class="latest_hindi_image" src="../Images/sakhiya.jpg">
+						<h4 class="latest_hindi_name">Badhsah</h4>
+						<h4 class="latest_hindi_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_hindi_inside">
+						<img class="latest_hindi_image" src="../Images/abhi party.jpg">
+						<h4 class="latest_hindi_name">Badhsah</h4>
+						<h4 class="latest_hindi_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_hindi_inside">
+						<img class="latest_hindi_image" src="../Images/andhadhun.jpg">
+						<h4 class="latest_hindi_name">Andhadhun</h4>
+						<h4 class="latest_hindi_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_hindi_inside">
+						<img class="latest_hindi_image" src="../Images/morni.jpg">
+						<h4 class="latest_hindi_name">Badhai Ho</h4>
+						<h4 class="latest_hindi_date">May 5, 2020</h4>
+					</div>
+					<div class="latest_hindi_inside">
+						<img class="latest_hindi_image" src="../Images/badhaiya.jpg">
+						<h4 class="latest_hindi_name">Badhai Ho</h4>
+						<h4 class="latest_hindi_date">May 5, 2020</h4>
+					</div>					
+				</div>
+			</section> <!-- end of section latest_hindi -->
+			<section id="music_player">
+				<div id="music_player_div">
+					<div id="about_song">
+						<img class="about_song_image" src="../Images/latest_deathbed.jpg">
+						<h4 class="about_song_name">Deathbed</h4>
+						<h4 class="about_artist_name">Powfu</h4>
+						<i id="icon_heart" class="far fa-heart"></i>
+						<i id="icon_ban"class="fas fa-ban"></i>
+					</div>
+					<div id="player_bar">
+						<i id="icon_shuffle" class="fas fa-random"></i>
+						<i id="icon_backward" class="fas fa-step-backward"></i>
+						<i id="icon_pause" class="far fa-pause-circle" ></i>
+						<i id="icon_forward" class="fas fa-step-forward"></i>
+						<i id="icon_repeat" class="fas fa-redo"></i>
+						<span id="span_before" class="span_time">1:39 </span>
+						<input class="slider" type="range" min="1" max="100" value="50">
+						<span id="span_after" class="span_time">4:45 </span>
+					</div>
+					<div id="other_controls">
+						<i class="fas fa-list"></i>
+						<i class="fas fa-desktop"></i>
+						<i class="fas fa-volume-up"></i>
+						<input class="volume_slider" type="range" min="1" max="100" value="30">
+						<i id="icon_expand" class="fas fa-expand"></i>
+					</div>
+				</div>
+			</section> <!-- end of Music Player Setion -->
+
+		</div> <!-- end of master_div --> 
+		
+	</main>
+
+</body>
+</html>

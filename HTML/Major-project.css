@@ -1,0 +1,674 @@
+body{
+	background-color: #0c1027;
+}
+/header/
+.header{
+    display: inline-block;
+}
+/ninjas logo/
+.logo{
+    top:4%;
+    left:5%;
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    float: left;
+}
+.logo img{
+    height: 100%;
+    width:100%;
+    border-radius: 50%;
+}
+/ninja studio text/
+.ninjas{
+    top: 8%;
+    left:12%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+.studio{
+    top: 11%;
+    left:12%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+h3, h2{
+    color: lightgrey;
+    font-family: sans-serif;
+    font-size: 1rem;
+}
+/favorite/
+.favourites{
+    top:9%;
+    left:25%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+h1{
+    color: lightgrey;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+/search bar/
+.search-bar{
+    position: absolute;
+    top: 8%;
+    left:65%;
+    transform: translate(-50%,-50%);
+    background: #262626;
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+.search-btn{
+    color: whitesmoke;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.4s all;
+    width: 0px;
+    line-height: 40px;
+}
+.search-bar:hover > .search-txt{
+    width: 240px;
+    transition: 0 6s;
+
+}
+/notification icon/
+.notification{
+    position: absolute;
+    top: 8%;
+    left:80%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.notification:hover{
+    width:250px;
+    height:60px;
+    text-align: left;
+    padding:0 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; 
+}
+.notification .fas{
+    color: #cecece;
+    line-height: 60px;
+    font-size: 30px;
+}
+.notification .num{
+    position: absolute;
+    top:0;
+    right:0;
+    width:25px;
+    height: 25px;
+    border-radius: 50%;
+    background: lightcoral;
+    color: #ffffff;
+    line-height: 25px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.notification:hover .num{
+    position: relative;
+    background:transparent;
+    color: black;
+    font-size: 24px;
+    top: -4px;
+}
+.notification:hover .num::after{
+    content: ' Notification';
+}
+ul{
+    position: absolute;
+    left: 0;
+    top:60px;
+    margin:0;
+    width:84%;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    padding: 20px; 
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: none;
+}
+.notification:hover ul{
+    display: block;
+}
+ul li{
+    list-style: none;
+   border: 1px solid rgba(0,0,0,.1);
+   padding: 8px 0;
+   display: flex;
+}
+ul li:last-child{
+    border-bottom: none;
+}
+ul li .icon{
+    width: 24px;
+    height: 24px;
+    background: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 10px;
+}
+ul li .icon .fas{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 24px;
+}
+ul li .text{
+    position: relative;
+    font-family: sans-serif;
+    top:3px;
+    cursor: pointer;
+}
+ul li:hover .text{
+    font-weight: bold;
+    color: #ff2c74;
+}
+/image part/
+.image{
+    position: absolute;
+    top:9%;
+    left:95%;
+    transform: translate(-50%,-50%);
+    height:5rem;
+    width: 5rem;
+    float: left;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+#div1{
+	margin: 100px 0px 0px 50px;
+	width: 80%;
+  height: 100%;
+}
+/upper image section/
+#upp-img{
+	height: 250px;
+	width: 70%;
+	display: flex;
+}
+.img1{
+	height: 12rem;
+	width: 20rem;
+	margin-right: 10px;
+}
+.img1:hover{
+	transform: scale(1.3);
+	transition-duration: 0.8s; 
+}
+/latest release section/
+#lat-rel1{
+     color: lightgrey;
+     font-weight: bold;
+     font-size: 1.7rem;
+     font-family: sans-serif;
+}
+.img2{
+   height: 100px;
+    width: 100px;
+    margin-right: 20px;
+    float: left;
+    display: inline-flex;
+    justify-content: center;
+}
+.album{
+	color: lightgrey;
+	font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 0.1px;
+}
+.detail{
+	color: lightgrey;
+	font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: inline-flex;
+    justify-content: center;
+    line-height: 0.1px;
+}
+#icon{
+	 float:right;
+    margin-left: -40px;
+}
+#song1{
+    width:30%;
+    height: 17%;
+    display: inline-block;
+}
+#song2{
+    width:30%;
+    height: 17%;
+    margin-right: 280px;
+}
+#song3{
+    width:30%;
+    height: 17%;
+    display: inline-block;
+}
+#song4{
+    width:30%;
+    height: 17%;
+    margin-right: 280px;
+}
+.duration{	
+	color: lightgrey;
+    float: right;
+    font-size: 1.1rem;
+    font-family: sans-serif;
+    font-weight: normal;
+    display: inline-flex;
+    line-height: 0px;
+	
+}
+.towards-right{
+    float: right;
+}
+.provide-margin{
+    margin-top: 15px;
+}
+   /QUEUE PART/
+ .queue{
+    top: 18%;
+    left: 72%;
+    position: absolute;
+    width: 320px;
+    overflow: scroll;
+    height: 590px;
+}
+.queue h1{
+    color: white;
+    font-family: sans-serif;
+}
+#queue_img{
+    height: 50px;
+      width: 50px;
+      margin-right: 20px;
+      margin-left: 10px;
+      float: left;
+      display:inline-flex;
+      justify-content: center;
+}
+
+.played_name{
+        color:lightgrey;
+        font-size: 1.1rem;
+        font-family: sans-serif;
+        font-weight: normal;
+        display: inline-flex;
+        justify-content: center;
+        line-height: 0.1px;
+}
+.margin_right{
+    margin-top: 10px;
+    display: inline-block;
+}
+.towards-left{
+    float:left;
+    margin-left:-80px;
+    
+}
+#left_move{
+    margin-left: 0px;
+    float:left;
+}
+.queue::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.queue::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.queue::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+/popular artist section/
+
+#pop-ar{
+     color: lightgrey;
+     font-weight: bold;
+     font-size: 1.7rem;
+     font-family: sans-serif;
+}
+
+.round{
+    border-radius: 50%;
+    height: 190px;
+    width: 190px;
+}
+
+.names{
+    color: lightgrey;
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    margin-left: 59px;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+           /station section/
+.station{
+    color: lightgrey;
+     font-weight: bold;
+     font-size: 1.7rem;
+     font-family: sans-serif;
+}
+
+.box{
+        position: relative;
+        display: inline-block;
+        padding: 10px;
+        overflow: hidden;
+}
+    .box .text{
+        position: absolute;
+        z-index: 999;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        top: 40%; /* Adjust this value to move the positioned div up and down */
+        text-align: center;
+        width: 60%; /* Set the width of the positioned div */
+    }
+
+#work{
+  height: 186px;
+  width: 350px;
+  opacity: 0.4; 
+}
+
+#work:hover{
+  transform: scale(1.3);
+  transition-duration: 0.8s; 
+}
+
+     /latest english/
+#lat-eng{
+  color: lightgrey;
+     font-weight: bold;
+     font-size: 1.7rem;
+     font-family: sans-serif;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 153px;
+    padding: 4px;
+}
+.img3{
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+}
+.caption{
+    display: inline ;
+    color: lightgrey;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-right: 110px;
+}
+
+.caption2{
+    display: inline;
+    color: lightgrey;
+    font-weight: normal;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    margin-right: 65px;
+}
+
+   /audio bar/
+#music_bar{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top:39rem;
+    left: 0;
+    visibility: visible;
+  }
+  .section6{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    width: 100vw;
+    z-index: -1;
+  }
+  .background_color{
+    margin-left: -10px;
+    height: 95px;
+    width:100vw;
+    /* z-index: -1; */
+    background-color: #101119;
+    position: relative;
+  }
+  .music_player_img{
+    height: 60px;
+    width: 70px;
+    z-index: 1;
+    background-image: url(images/geazy.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    left: 3.5rem;
+  }
+  .white_text{
+    color: lightgrey;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    position: relative;
+    left: 5rem;
+    /* top: rem; */
+  }
+  .grey_text{
+    color: grey;
+    font-size: .9rem;
+    position: relative;
+    left: 5rem;
+    top: -.8rem;
+  }
+  .music_payer_heart,.ban_symbol{
+    color:grey;
+    position: relative;
+    left: 13rem;
+    top: -5rem;
+    padding: .5rem;
+    display: inline-block;
+  }
+  .music_payer_heart:hover{
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px lightgrey;
+  }
+  .ban_symbol:hover,.shuffle:hover,.step_backward:hover,
+  .step_forward:hover,.repeate:hover
+  {
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px lightgrey;
+  }
+  .shuffle{
+    color: grey;
+    position: relative;
+    left: 30rem;
+    top: -8rem;
+    display: inline-block;
+    padding: .5rem;
+  }
+  .step_backward{
+    color: grey;
+    position: relative;
+    left: 31rem;
+    top: -8rem;
+    display: inline-block;
+    padding: .5rem;
+  }
+  .pause1{
+    color: lightgrey;
+    position: relative;
+    left: 36rem;
+    top: -10.5rem;
+    font-weight: lighter;
+    display: inline-block;
+    font-size: 1.8rem;
+    padding: .5rem;
+  }
+  .step_forward{
+    color: grey;
+    position: relative;
+    left: 40rem;
+    top: -13rem;
+    display: inline-block;
+    padding: .5rem;
+  }
+  .repeate{
+    color: grey;
+    position: relative;
+    left: 41rem;
+    top: -13rem;
+    display: inline-block;
+    padding: .5rem;
+  }
+  .time{
+    color: grey;
+    font-size: .9rem;
+    position: relative;
+    top: -13rem;
+    left: 20rem;
+    font-style:normal;
+
+  }
+  .time_rigth{
+    color: grey;
+    font-size: .9rem;
+    position: relative;
+    top: -16rem;
+    left: 55rem;
+    font-style:normal;
+
+  }
+  .running_bar_green{
+    height: 0px;
+    width: 150px;
+    border:3px solid #30B077;
+    border-radius: 10px;
+    position: relative;
+    left: 23rem;
+    top: -13.65rem;
+  }
+  .small_circle{
+    color: white;
+    position: relative;
+    left: 32.5rem;
+    top: -14.8rem;
+  }
+  .running_bar_white{
+    height: 0px;
+    width: 330px;
+    border:3px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+    left: 33rem;
+    top: -14rem;
+  }
+  .stack{
+    color: grey;
+    position: relative;
+    left: 62rem;
+    top: -17.8rem;
+  }
+  .computer{
+    color: grey;
+    position: relative;
+    left: 64.8rem;
+    top: -19rem;
+  }
+  .volume{
+    color: grey;
+    position: relative;
+    left: 67.5rem;
+    top: -20.2rem;
+  }
+  .running_bar_green1{
+    height: 0px;
+    width: 40px;
+    border:3px solid #30B077;
+    border-radius: 10px;
+    position: relative;
+    left: 69rem;
+    top: -21rem;
+
+
+  }
+  .running_bar_white1{
+    height: 0px;
+    width: 30px;
+    border:3px solid lightgrey;
+    border-radius: 10px;
+    position: relative;
+    left: 72rem;
+    top: -21.4rem;
+  }
+  .small_circle1{
+    color: white;
+    position: relative;
+    left: 71.5rem;
+    top: -22.2rem;
+  }
+  .full_screen{
+    color: grey;
+    position: relative;
+    left: 76.5rem;
+    top: -23.6rem;
+    font-size: 1.5rem;
+  }
