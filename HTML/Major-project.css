@@ -1,11 +1,11 @@
 body{
 	background-color: #0c1027;
 }
-/header/
+/*header*/
 .header{
     display: inline-block;
 }
-/ninjas logo/
+/*ninjas logo*/
 .logo{
     top:4%;
     left:5%;
@@ -19,7 +19,7 @@ body{
     width:100%;
     border-radius: 50%;
 }
-/ninja studio text/
+/*ninja studio text*/
 .ninjas{
     top: 8%;
     left:12%;
@@ -37,7 +37,7 @@ h3, h2{
     font-family: sans-serif;
     font-size: 1rem;
 }
-/favorite/
+/*favorite*/
 .favourites{
     top:9%;
     left:25%;
@@ -49,7 +49,7 @@ h1{
     font-family: sans-serif;
     font-size: 1.5rem;
 }
-/search bar/
+/* /search bar/ */
 .search-bar{
     position: absolute;
     top: 8%;
@@ -88,7 +88,7 @@ h1{
     transition: 0 6s;
 
 }
-/notification icon/
+/* /notification icon/ */
 .notification{
     position: absolute;
     top: 8%;
@@ -187,7 +187,7 @@ ul li:hover .text{
     font-weight: bold;
     color: #ff2c74;
 }
-/image part/
+/* /image part/ */
 .image{
     position: absolute;
     top:9%;
@@ -207,7 +207,7 @@ ul li:hover .text{
 	width: 80%;
   height: 100%;
 }
-/upper image section/
+/* /upper image section/ */
 #upp-img{
 	height: 250px;
 	width: 70%;
@@ -222,7 +222,7 @@ ul li:hover .text{
 	transform: scale(1.3);
 	transition-duration: 0.8s; 
 }
-/latest release section/
+/* /latest release section/ */
 #lat-rel1{
      color: lightgrey;
      font-weight: bold;
@@ -295,7 +295,7 @@ ul li:hover .text{
 .provide-margin{
     margin-top: 15px;
 }
-   /QUEUE PART/
+   /* /QUEUE PART/ */
  .queue{
     top: 18%;
     left: 72%;
@@ -364,7 +364,7 @@ body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
-/popular artist section/
+/* /popular artist section/ */
 
 #pop-ar{
      color: lightgrey;
@@ -395,7 +395,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5px;
 }
 
-           /station section/
+/* /station section/ */
 .station{
     color: lightgrey;
      font-weight: bold;
@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
   transition-duration: 0.8s; 
 }
 
-     /latest english/
+     /* /latest english/ */
 #lat-eng{
   color: lightgrey;
      font-weight: bold;
@@ -469,7 +469,7 @@ div.item {
     margin-right: 65px;
 }
 
-   /audio bar/
+   /* /audio bar/ */
 #music_bar{
     height: 0;
     width: 0;
